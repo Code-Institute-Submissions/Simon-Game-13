@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simon Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <audio id="clip1">
+        <source src="audio/simonSound1.mp3"></source>
+    </audio>
+    <audio id="clip2">
+        <source src="audio/simonSound2.mp3"></source>
+    </audio>
+    <audio id="clip3">
+        <source src="audio/simonSound3.mp3"></source>
+    </audio>
+    <audio id="clip4">
+        <source src="audio/simonSound4.mp3"></source>
+    </audio>
+</head>
+<body>
+    <div>
+        <div class="btn btn-info" id="modal" data-hover="Instructions: 1. Press the red 'ON' button.
+        2. Chose a more difficult mode, by clicking the 'STRICT button.
+        3. Press the 'START' button for the game to begin.
+        4. Press the lights in the exact order they appear on to win the game!
+        When you complete Level 20 you WON the game!">?</div>
+    </div>
+    <div id="outer-circle">
+        <div id="top-left"></div>
+        <div id="top-right"></div>
+        <div id="bottom-left"></div>
+        <div id="bottom-right"></div>
+        <div id="inner-circle">
+            <h3>Simon</h3>
+            <div id="controls">
+                <button class="btn btn-danger" id="on">ON</button>
+                <button class="btn btn-success" id="start">START</button>
+                <button class="btn btn-warning" id="strict">STRICT</button>
+                <button class="btn btn-warning" id="last">LAST</button>
+            </div>
+            <div id="count"></div>
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+    </body>
+</html>

@@ -32,3 +32,12 @@ onButton.addEventListener("click", function(){
         clearInterval(intervalId);
     }
 });
+
+strictButton.addEventListener("click", function(){
+    if (strictButton.click === true){
+        strict = true;
+    }
+    else{
+        strict = false;
+    }
+})

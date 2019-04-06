@@ -20,4 +20,15 @@ const startButton = document.querySelector("#start");
 const strictButton = document.querySelector("#strict");
 const lastbutton = document.querySelector("#last");
 
-
+onButton.addEventListener("click", function(){
+    if (onButton.click === true){
+        on = true;
+        turnCounter.innerHTML = "-";
+    }
+    else{
+        on = false;
+        turnCounter.innerHTML = "";
+        clearColor();
+        clearInterval(intervalId);
+    }
+});

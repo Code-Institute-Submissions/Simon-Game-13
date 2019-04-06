@@ -40,4 +40,4 @@ strictButton.addEventListener("click", function(){
     else{
         strict = false;
     }
-})
+});

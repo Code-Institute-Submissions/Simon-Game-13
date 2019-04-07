@@ -41,3 +41,9 @@ strictButton.addEventListener("click", function(){
         strict = false;
     }
 });
+
+startButton.addEventListener("click", function(){
+    if (on || win){
+        play();
+    }
+});

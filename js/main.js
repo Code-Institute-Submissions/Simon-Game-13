@@ -84,3 +84,40 @@ function gameTurn(){
         }, 300);
     }
 }
+
+function one(){
+    if (noise){
+        let audio = document.getElementById("clip1");
+        audio.play();
+    }
+}
+
+function two(){
+    if (noise){
+        let audio = document.getElementById("clip2");
+        audio.play();
+    }
+}
+
+function three(){
+    if (noise){
+        let audio = getElementById("clip3");
+        audio.play();
+    }
+}
+
+function four(){
+    let audio = getElementById("clip4");
+    audio.play();
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -173,3 +173,16 @@ bottomLeft.addEventListener("click", function(){
         }
     }
 });
+
+bottomRight.addEventListener("click", function(){
+    if (on){
+        playerOrder.push(3);
+        check();
+        four();
+        if (!win){
+            setTimeout(function(){
+                clearColor();
+            }, 300);
+        }
+    }
+});

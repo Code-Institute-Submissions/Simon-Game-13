@@ -163,7 +163,7 @@ topRight.addEventListener("click", function(){
 
 bottomLeft.addEventListener("click", function(){
     if (on){
-        playerOrder.push(2);
+        playerOrder.push(3);
         check();
         thre();
         if(!win){
@@ -176,7 +176,7 @@ bottomLeft.addEventListener("click", function(){
 
 bottomRight.addEventListener("click", function(){
     if (on){
-        playerOrder.push(3);
+        playerOrder.push(4);
         check();
         four();
         if (!win){
@@ -186,3 +186,4 @@ bottomRight.addEventListener("click", function(){
         }
     }
 });
+

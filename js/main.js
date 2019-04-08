@@ -127,3 +127,10 @@ function clearColor(){
     bottomLeft.style.backgroundColor = "#FFEB3B";
     bottomRight.style.backgroundColor = "#2196F3";
 }
+
+function flashColor(){
+    topLeft.style.backgroundColor = "#81C784";
+    topRight.style.backgroundColor = "#FF8A65";
+    bottomLeft.style.backgroundColor = "#FFF176";
+    bottomRight.style.backgroundColor = "#4FC3F7";
+}

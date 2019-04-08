@@ -160,3 +160,16 @@ topRight.addEventListener("click", function(){
         }
     }
 });
+
+bottomLeft.addEventListener("click", function(){
+    if (on){
+        playerOrder.push(2);
+        check();
+        thre();
+        if(!win){
+            setTimeout(function(){
+                clearColor();
+            }, 300);
+        }
+    }
+});

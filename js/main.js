@@ -91,7 +91,7 @@ function one(){
         audio.play();
     }
     noise = true;
-    topLeft.style.background = #81C784;
+    topLeft.style.background = "#81C784";
 }
 
 function two(){
@@ -100,7 +100,7 @@ function two(){
         audio.play();
     }
     noise = true;
-    topRight.style.background = #FF8A65;
+    topRight.style.background = "#FF8A65";
 }
 
 function three(){
@@ -109,7 +109,7 @@ function three(){
         audio.play();
     }
     noise = true;
-    bottomLeft.style.background = #FFF176;
+    bottomLeft.style.background = "#FFF176";
 }
 
 function four() {
@@ -118,7 +118,7 @@ function four() {
     audio.play();
     }
     noise = true;
-    bottomRight.style.backgroundColor = #4FC3F7;
+    bottomRight.style.backgroundColor = "#4FC3F7";
 }
 
 function clearColor(){

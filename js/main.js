@@ -90,6 +90,8 @@ function one(){
         let audio = document.getElementById("clip1");
         audio.play();
     }
+    noise = true;
+    topLeft.style.background = #81C784;
 }
 
 function two(){
@@ -97,6 +99,8 @@ function two(){
         let audio = document.getElementById("clip2");
         audio.play();
     }
+    noise = true;
+    topRight.style.background = #FF8A65;
 }
 
 function three(){
@@ -104,20 +108,15 @@ function three(){
         let audio = getElementById("clip3");
         audio.play();
     }
+    noise = true;
+    bottomLeft.style.background = #FFF176;
 }
 
-function four(){
+function four() {
+    if (noise){
     let audio = getElementById("clip4");
     audio.play();
+    }
+    noise = true;
+    bottomRight.style.backgroundColor = #4FC3F7;
 }
-
-
-
-
-
-
-
-
-
-
-

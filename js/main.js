@@ -1,7 +1,7 @@
 let order = [];
 let playerOrder = [];
 let flash;
-let turn;
+let count;
 let good;
 let compTurn;
 let intervalId;
@@ -10,7 +10,7 @@ let noise = true;
 let on = false;
 let win;
 
-const turnCounter = document.querySelector("#turn");
+const turnCounter = document.querySelector("#count");
 const topLeft = document.querySelector("#topleft");
 const topRight = document.querySelector("#topright");
 const bottomLeft = document.querySelector("#bottomleft");
@@ -47,3 +47,19 @@ startButton.addEventListener("click", function(){
         play();
     }
 });
+
+function play(){
+    win = false;
+    order=[];
+    playerOrder=[];
+    flash = 0;
+    intervalId = 0;
+    count = 1;
+    turnCounter.innerHTML = 1;
+    good = true;
+    for (var i = 0; i < 10; i++){
+        order.push(Math.floor(math.random() * 4) + 1);
+    }
+    compTurn = true;
+    intervalId = setInterval(gameTurn, 900);
+}

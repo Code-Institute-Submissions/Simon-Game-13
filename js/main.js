@@ -120,3 +120,10 @@ function four() {
     noise = true;
     bottomRight.style.backgroundColor = #4FC3F7;
 }
+
+function clearColor(){
+    topLeft.style.backgroundColor = "#4CAF50";
+    topRight.style.backgroundColor = "#f44336";
+    bottomLeft.style.backgroundColor = "#FFEB3B";
+    bottomRight.style.backgroundColor = "#2196F3";
+}

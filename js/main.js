@@ -50,7 +50,7 @@ startButton.addEventListener("click", function(){
 
 function play(){
     win = false;
-    order=[];
+    order = [];
     playerOrder=[];
     flash = 0;
     intervalId = 0;
@@ -62,4 +62,25 @@ function play(){
     }
     compTurn = true;
     intervalId = setInterval(gameTurn, 900);
+}
+
+function gameTurn(){
+    on = false;
+    if (flash === turn){
+        clearInterval(intervalId);
+        compTurn = false;
+        clearColor();
+        on = true;
+    }
+
+    if (compTurn){
+        clearColor();
+        setTimeout(function(){
+            if(order[flash] === 1) one();
+            if(order[flash] === 2) two();
+            if(order[flash] === 3) three();
+            if(order[flash] === 4) four();
+            flash++;
+        }, 300);
+    }
 }

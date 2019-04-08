@@ -148,3 +148,15 @@ topLeft.addEventListener("click", function(){
     }
 });
 
+topRight.addEventListener("click", function(){
+    if (on){
+        playerOrder.push(2);
+        check();
+        two();
+        if(!win){
+            setTimeout(function(){
+                clearColor();
+            }, 300);
+        }
+    }
+});

@@ -216,3 +216,19 @@ function check(){
     }
     noise = false;
 }
+
+if (count === playerOrder.length && good && !win){
+    count++;
+    playerOrder = [];
+    compTurn = true;
+    flash = 0;
+    turnCounter.innerHTML = count;
+    intervalID = setInterval(gameTurn, 800);
+}
+
+function winGame(){
+    flashColor();
+    turnCounter.innerHTML = "WIN!!!";
+    on = false;
+    win = true;
+}

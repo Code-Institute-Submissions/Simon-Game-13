@@ -187,3 +187,32 @@ bottomRight.addEventListener("click", function(){
     }
 });
 
+function check(){
+    if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
+        good = false;
+
+    if (playerOrder.length === 10 && good){
+        winGame();
+    }
+
+    if (good === false){
+        flashColor();
+        turnCounter.innerHTML = "NO!!!";
+        setTimeout(function(){
+            turnCounter.innerHTML = turn;
+            clearColor();
+
+            if (strict){
+                play();
+            }
+            else {
+                compTurn = true;
+                flash = 0;
+                playerOrder = [];
+                good = true;
+                intervalId = setInterva(gameTurn, 800);
+            }
+        }, 800)
+    }
+    noise = false;
+}

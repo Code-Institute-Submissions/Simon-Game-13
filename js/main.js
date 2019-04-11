@@ -11,10 +11,10 @@ let on = false;
 let win;
 
 const turnCounter = document.querySelector("#count");
-const topLeft = document.querySelector("#topleft");
-const topRight = document.querySelector("#topright");
-const bottomLeft = document.querySelector("#bottomleft");
-const bottomRight = document.querySelector("#bottomright");
+const topLeft = document.querySelector("#top-left");
+const topRight = document.querySelector("#top-right");
+const bottomLeft = document.querySelector("#bottom-left");
+const bottomRight = document.querySelector("#bottom-right");
 const onButton = document.querySelector("#on");
 const startButton = document.querySelector("#start");
 const strictButton = document.querySelector("#strict");
@@ -58,7 +58,7 @@ function play(){
     turnCounter.innerHTML = 1;
     good = true;
     for (var i = 0; i < 10; i++){
-        order.push(Math.floor(math.random() * 4) + 1);
+        order.push(Math.floor(Math.random() * 4) + 1);
     }
     compTurn = true;
     intervalId = setInterval(gameTurn, 900);
@@ -66,7 +66,7 @@ function play(){
 
 function gameTurn(){
     on = false;
-    if (flash === turn){
+    if (flash === count){
         clearInterval(intervalId);
         compTurn = false;
         clearColor();
@@ -165,7 +165,7 @@ bottomLeft.addEventListener("click", function(){
     if (on){
         playerOrder.push(3);
         check();
-        thre();
+        three();
         if(!win){
             setTimeout(function(){
                 clearColor();
@@ -199,7 +199,7 @@ function check(){
         flashColor();
         turnCounter.innerHTML = "NO!!!";
         setTimeout(function(){
-            turnCounter.innerHTML = turn;
+            turnCounter.innerHTML = count;
             clearColor();
 
             if (strict){
@@ -210,7 +210,7 @@ function check(){
                 flash = 0;
                 playerOrder = [];
                 good = true;
-                intervalId = setInterva(gameTurn, 800);
+                intervalId = setInterval(gameTurn, 800);
             }
         }, 800)
     }

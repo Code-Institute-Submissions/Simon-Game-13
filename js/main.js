@@ -9,6 +9,7 @@ let strict = false;
 let noise = true;
 let on = false;
 let win;
+let last;
 
 const turnCounter = document.querySelector("#count");
 const topLeft = document.querySelector("#top-left");
@@ -18,33 +19,39 @@ const bottomRight = document.querySelector("#bottom-right");
 const onButton = document.querySelector("#on");
 const startButton = document.querySelector("#start");
 const strictButton = document.querySelector("#strict");
-const lastbutton = document.querySelector("#last");
+const lastButton = document.querySelector("#last");
 
 onButton.addEventListener("click", function(){
-    if (onButton.click === true){
+    if (on === false){
         on = true;
         turnCounter.innerHTML = "-";
+        onButton.innerHTML = "OFF";
     }
     else{
         on = false;
         turnCounter.innerHTML = "";
         clearColor();
         clearInterval(intervalId);
+        onButton.innerHTML = "ON";
+        startButton.style.display = "block";
     }
 });
 
 strictButton.addEventListener("click", function(){
     if (strictButton.click === true){
         strict = true;
+        strictButton.innerHTML = "STRICT ON";
     }
     else{
         strict = false;
+        strictButton.innerHTML = "STRICT";
     }
 });
 
 startButton.addEventListener("click", function(){
     if (on || win){
         play();
+        startButton.style.display = "none";
     }
 });
 
@@ -105,7 +112,7 @@ function two(){
 
 function three(){
     if (noise){
-        let audio = getElementById("clip3");
+        let audio = document.getElementById("clip3");
         audio.play();
     }
     noise = true;
@@ -114,7 +121,7 @@ function three(){
 
 function four() {
     if (noise){
-    let audio = getElementById("clip4");
+    let audio = document.getElementById("clip4");
     audio.play();
     }
     noise = true;
@@ -212,18 +219,18 @@ function check(){
                 good = true;
                 intervalId = setInterval(gameTurn, 800);
             }
-        }, 800)
+        }, 800);
     }
     noise = false;
-}
 
-if (count === playerOrder.length && good && !win){
-    count++;
-    playerOrder = [];
-    compTurn = true;
-    flash = 0;
-    turnCounter.innerHTML = count;
-    intervalID = setInterval(gameTurn, 800);
+    if (count === playerOrder.length && good && !win){
+        count++;
+        playerOrder = [];
+        compTurn = true;
+        flash = 0;
+        turnCounter.innerHTML = count;
+        intervalId = setInterval(gameTurn, 800);
+    }
 }
 
 function winGame(){
@@ -232,3 +239,7 @@ function winGame(){
     on = false;
     win = true;
 }
+
+lastButton.addEventListener("click", function() {
+    check();
+});

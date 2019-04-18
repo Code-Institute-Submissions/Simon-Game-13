@@ -107,12 +107,18 @@ h3{
     top: 65px;
     left: 1px;
     display: inline-block;
+    background-color: #f44336;
+    font-weight: bold;
+    color: white;
 }
 
 #start{
     position: absolute;
     top: 20px;
     left: 62px;
+    background-color: #4CAF50;
+    font-weight: bold;
+    color: white;
 }
 
 #strict{
@@ -120,6 +126,9 @@ h3{
     top: 65px;
     left: 60px;
     display: inline-block;
+    background-color: #FFC107;
+    font-weight: bold;
+    color: white;
 }
 
 #last{
@@ -127,6 +136,9 @@ h3{
     top: 65px;
     left: 145px;
     display: inline-block;
+    background-color: #FFC107;
+    font-weight: bold;
+    color: white;
 }
 
 #count{
@@ -140,4 +152,5 @@ h3{
     display: flex;
     align-item: center;
     justify-content: center;
+    padding-top: 14px;
 }

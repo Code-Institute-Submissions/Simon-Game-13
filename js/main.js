@@ -38,7 +38,7 @@ onButton.addEventListener("click", function(){
 });
 
 strictButton.addEventListener("click", function(){
-    if (strictButton.click === true){
+    if (strict === false){
         strict = true;
         strictButton.innerHTML = "STRICT ON";
     }
@@ -240,6 +240,3 @@ function winGame(){
     win = true;
 }
 
-lastButton.addEventListener("click", function() {
-    check();
-});

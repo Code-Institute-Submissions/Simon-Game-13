@@ -9,7 +9,6 @@ let strict = false;
 let noise = true;
 let on = false;
 let win;
-let last;
 
 const turnCounter = document.querySelector("#count");
 const topLeft = document.querySelector("#top-left");
@@ -19,13 +18,13 @@ const bottomRight = document.querySelector("#bottom-right");
 const onButton = document.querySelector("#on");
 const startButton = document.querySelector("#start");
 const strictButton = document.querySelector("#strict");
-const lastButton = document.querySelector("#last");
 
 onButton.addEventListener("click", function(){
     if (on === false){
         on = true;
         turnCounter.innerHTML = "-";
         onButton.innerHTML = "OFF";
+        onButton.style.background = "#4CAF50";
     }
     else{
         on = false;
@@ -34,17 +33,18 @@ onButton.addEventListener("click", function(){
         clearInterval(intervalId);
         onButton.innerHTML = "ON";
         startButton.style.display = "block";
+        onButton.style.background = "#f44336";
     }
 });
 
 strictButton.addEventListener("click", function(){
     if (strict === false){
         strict = true;
-        strictButton.innerHTML = "STRICT ON";
+        strictButton.style.background = "#4CAF50";
     }
     else{
         strict = false;
-        strictButton.innerHTML = "STRICT";
+        strictButton.style.background = "#f44336";
     }
 });
 
@@ -88,7 +88,7 @@ function gameTurn(){
             if(order[flash] === 3) three();
             if(order[flash] === 4) four();
             flash++;
-        }, 300);
+        }, 200);
     }
 }
 
@@ -121,8 +121,8 @@ function three(){
 
 function four() {
     if (noise){
-    let audio = document.getElementById("clip4");
-    audio.play();
+        let audio = document.getElementById("clip4");
+        audio.play();
     }
     noise = true;
     bottomRight.style.backgroundColor = "#4FC3F7";
@@ -239,4 +239,3 @@ function winGame(){
     on = false;
     win = true;
 }
-

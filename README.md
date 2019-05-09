@@ -7,7 +7,7 @@ The device has four coloured buttons, each producing a particular tone when it i
 
 ## UX
 Prior to coding the game, I made some mockups so I can see what design, style, layout to use, in order to enhance the UX. These wireframes are attached to my Github repository so they can easily be view and accessed easily. 
-The game itself is structured into five functional sections, each playing an important part of the game. We have a middle section focusing on all the commands allowing the player to turn on the game,  start it, activate the strict mode, being able to see on a small display the games messages like the round number, if the player has pressed the wrong sequence or if he had win the game.
+The game itself has a short instructions button and is structured into five functional sections, each playing an important part of the game. We have a middle section focusing on all the commands allowing the player to turn on the game,  start it, activate the strict mode, being able to see on a small display the games messages like the round number, if the player has pressed the wrong sequence or if he had win the game.
 Being an online version of the popular game Simon and making in accessible to a larger audience, the purpose of this was indeed to reach out to more players. As so many things these days are online based, creating this game for the online communities makes it easier to access and play whenever the user wishes.
 
 ## FEATURES

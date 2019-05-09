@@ -90,7 +90,7 @@
 
 h3{
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 80px;
     font-family: Serpentine Sans, serif;
     font-weight: bold;
@@ -99,12 +99,12 @@ h3{
 #controls{
     position: absolute;
     top: 50px;
-    left: 19px;
+    left: 10px;
 }
 
 #on{
     position: absolute;
-    top: 65px;
+    top: 50px;
     left: 1px;
     display: inline-block;
     background-color: #f44336;
@@ -114,8 +114,8 @@ h3{
 
 #start{
     position: absolute;
-    top: 20px;
-    left: 62px;
+    top: 50px;
+    left: 59px;
     background-color: #4CAF50;
     font-weight: bold;
     color: white;
@@ -123,27 +123,17 @@ h3{
 
 #strict{
     position: absolute;
-    top: 65px;
-    left: 60px;
+    top: 50px;
+    left: 138px;
     display: inline-block;
-    background-color: #FFC107;
-    font-weight: bold;
-    color: white;
-}
-
-#last{
-    position: absolute;
-    top: 65px;
-    left: 145px;
-    display: inline-block;
-    background-color: #FFC107;
+    background-color: #f44336;
     font-weight: bold;
     color: white;
 }
 
 #count{
     position: absolute;
-    top: 170px;
+    top: 160px;
     left: 70px;
     height: 50px;
     width: 100px;

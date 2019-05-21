@@ -1,14 +1,14 @@
-let order = [];
-let playerOrder = [];
-let flash;
-let count;
-let good;
-let compTurn;
-let intervalId;
-let strict = false;
-let noise = true;
-let on = false;
-let win;
+let order = []; //variable that keeps track of the order of the lights flashing
+let playerOrder = []; //the order that the player is pressing the lights in
+let flash; //the number of flashes
+let count; //keep track of what count/level we are at
+let good; //boolean showing if the player has pressed the right colours or not
+let compTurn; //boolean keeps track of the computer`s or player`s turn
+let intervalId; //
+let strict = false; //keeps track if the strict button has been pressed (starts false/not pressed)
+let noise = true; //to make the noise per colour
+let on = false; //the game starts as turned off; player needs to turn it on
+let win; //tracks if the player has won the game or not
 
 const turnCounter = document.querySelector("#count");
 const topLeft = document.querySelector("#top-left");

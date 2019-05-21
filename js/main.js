@@ -23,6 +23,10 @@ const onButton = document.querySelector("#on");
 const startButton = document.querySelector("#start");
 const strictButton = document.querySelector("#strict");
 
+/*
+    adding click EventListener to the onButton to start functioning when it is pressed
+*/
+
 onButton.addEventListener("click", function(){
     if (on === false){
         on = true;
@@ -41,6 +45,10 @@ onButton.addEventListener("click", function(){
     }
 });
 
+/*
+    adding click EventListener to the strictButton to start functioning when it is pressed
+*/
+
 strictButton.addEventListener("click", function(){
     if (strict === false){
         strict = true;
@@ -51,6 +59,10 @@ strictButton.addEventListener("click", function(){
         strictButton.style.background = "#f44336";
     }
 });
+
+/*
+    adding click EventListener to the startButton to start functioning when it is pressed
+*/
 
 startButton.addEventListener("click", function(){
     if (on || win){

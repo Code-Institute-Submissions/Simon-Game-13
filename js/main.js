@@ -64,7 +64,7 @@ function play(){
     count = 1;
     turnCounter.innerHTML = 1;
     good = true;
-    for (var i = 0; i < 10; i++){
+    for (let i = 0; i < 10; i++){
         order.push(Math.floor(Math.random() * 4) + 1);
     }
     compTurn = true;

@@ -269,7 +269,7 @@ function check(){
             }
         }, 800);
     }
-    noise = false;
+    noise = true;
 
     if (count === playerOrder.length && good && !win){
         count++;

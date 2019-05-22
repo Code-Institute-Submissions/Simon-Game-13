@@ -173,8 +173,8 @@ function clearColor(){
 }
 
 /*
-
-**/
+    function that  lights the colour once pressed
+*/
 function flashColor(){
     topLeft.style.backgroundColor = "#81C784";
     topRight.style.backgroundColor = "#FF8A65";
@@ -238,6 +238,10 @@ bottomRight.addEventListener("click", function(){
     }
 });
 
+/*
+     creating the check() function to check if the player has pressed the correct colours in the correct order
+*/
+
 function check(){
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
         good = false;
@@ -276,6 +280,10 @@ function check(){
         intervalId = setInterval(gameTurn, 800);
     }
 }
+
+/*
+    creating the winGame() function that defines what the game does if the player reaches the last round and wins tha game
+*/
 
 function winGame(){
     flashColor();

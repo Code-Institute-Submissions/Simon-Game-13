@@ -71,6 +71,10 @@ startButton.addEventListener("click", function(){
     }
 });
 
+/*
+     defining the play() function that plays the game
+*/
+
 function play(){
     win = false;
     order = [];
@@ -86,7 +90,9 @@ function play(){
     compTurn = true;
     intervalId = setInterval(gameTurn, 900);
 }
-
+/*
+    gameTurn() function make the game to function step by step
+*/
 function gameTurn(){
     on = false;
     if (flash === count){

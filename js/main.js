@@ -122,6 +122,9 @@ function gameTurn(){
     }
 }
 
+/*
+    creating the functions for all four flashing colours
+*/
 function one(){
     if (noise){
         let audio = document.getElementById("clip1");
@@ -158,6 +161,10 @@ function four() {
     bottomRight.style.backgroundColor = "#4FC3F7";
 }
 
+/*
+     defining the function that clears the colours that flashed in functions one() to four()
+     and re-instates them to their standard colours
+*/
 function clearColor(){
     topLeft.style.backgroundColor = "#4CAF50";
     topRight.style.backgroundColor = "#f44336";
@@ -165,12 +172,19 @@ function clearColor(){
     bottomRight.style.backgroundColor = "#2196F3";
 }
 
+/*
+
+**/
 function flashColor(){
     topLeft.style.backgroundColor = "#81C784";
     topRight.style.backgroundColor = "#FF8A65";
     bottomLeft.style.backgroundColor = "#FFF176";
     bottomRight.style.backgroundColor = "#4FC3F7";
 }
+
+/*
+     programming the functions so the player can show that he knows what colour lit up by click the four colors
+*/
 
 topLeft.addEventListener("click", function(){
     if (on){

@@ -2,8 +2,8 @@
     border: 10px solid black;
     border-radius: 50%;
     position: relative;
-    width: 520px;
-    height: 520px;
+    width: 420px;
+    height: 420px;
     margin: auto;
     box-shadow: 15px 20px 50px 5px #888888;
     background-color: #EFEBE9;
@@ -11,16 +11,16 @@
 
 #top-left{
     border: 5px solid white;
-    height: 250px;
-    width: 250px;
+    height: 205px;
+    width: 205px;
     background-color: #4CAF50;
     position: absolute;
     top: 50%;
     left: 50%;
-    border-radius: 250px 0 0 0;
-    -moz-border-radius: 250px 0 0 0;
-    -webkit-border-radius: 250px 0 0 0;
-    margin: -250px 0 0 -250px;
+    border-radius: 205px 0 0 0;
+    -moz-border-radius: 205px 0 0 0;
+    -webkit-border-radius: 205px 0 0 0;
+    margin: -205px 0 0 -205px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -28,16 +28,16 @@
 
 #top-right{
     border: 5px solid white;
-    height: 250px;
-    width: 250px;
+    height: 205px;
+    width: 205px;
     background-color: #f44336;
     position: absolute;
     top: 50%;
     left: 50%;
-    border-radius: 0 250px 0 0;
-    -moz-border-radius: 0 250px 0 0;
-    -webkit-border-radius: 0 250px 0 0;
-    margin: -250px 0 0 0;
+    border-radius: 0 205px 0 0;
+    -moz-border-radius: 0 205px 0 0;
+    -webkit-border-radius: 0 205px 0 0;
+    margin: -205px 0 0 0;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -45,16 +45,16 @@
 
 #bottom-left{
     border: 5px solid white;
-    height: 250px;
-    width: 250px;
+    height: 205px;
+    width: 205px;
     background-color: #FFEB3B;
     position: absolute;
     top: 50%;
     left: 50%;
-    border-radius: 0 0 0 250px;
-    -moz-border-radius: 0 0 0 250px;
-    -webkit-border-radius: 0 0 0 250px;
-    margin: 0 0 0 -250px;
+    border-radius: 0 0 0 205px;
+    -moz-border-radius: 0 0 0 205px;
+    -webkit-border-radius: 0 0 0 205px;
+    margin: 0 0 0 -205px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -62,15 +62,15 @@
 
 #bottom-right{
     border: 5px solid white;
-    height: 250px;
-    width: 250px;
+    height: 205px;
+    width: 205px;
     background-color: #2196F3;
     position: absolute;
     top:50%;
     left: 50%;
-    border-radius: 0 0 250px 0;
-    -moz-border-radius: 0 0 250px 0;
-    -webkit-border-radius: 0 0 250px 0;
+    border-radius: 0 0 205px 0;
+    -moz-border-radius: 0 0 205px 0;
+    -webkit-border-radius: 0 0 205px 0;
     margin: 0;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -79,8 +79,8 @@
 
 #inner-circle{
     border: 5px solid black;
-    height: 250px;
-    width: 250px;
+    height: 205px;
+    width: 205px;
     background-color: white;
     position: absolute;
     top: 25%;
@@ -91,56 +91,65 @@
 h3{
     position: absolute;
     top: 30px;
-    left: 80px;
+    left: 60px;
     font-family: Serpentine Sans, serif;
     font-weight: bold;
 }
 
 #controls{
     position: absolute;
-    top: 50px;
-    left: 10px;
+    top: 30px;
+    left: 3px;
 }
 
 #on{
     position: absolute;
     top: 50px;
     left: 1px;
+    height: 35px;
+    width: 40px;
     display: inline-block;
     background-color: #f44336;
     font-weight: bold;
     color: white;
+    padding: 1px;
 }
 
 #start{
     position: absolute;
     top: 50px;
-    left: 59px;
+    left: 45px;
+    height: 35px;
+    width: 70px;
     background-color: #4CAF50;
     font-weight: bold;
     color: white;
+    padding: 1px;
 }
 
 #strict{
     position: absolute;
     top: 50px;
-    left: 138px;
+    left: 120px;
+    height: 35px;
+    width: 70px;
     display: inline-block;
     background-color: #f44336;
     font-weight: bold;
     color: white;
+    padding: 1px;
 }
 
 #count{
     position: absolute;
-    top: 160px;
-    left: 70px;
-    height: 50px;
+    top: 130px;
+    left: 50px;
+    height: 40px;
     width: 100px;
     background-color: #4E342E;
     color: red;
     display: flex;
     align-item: center;
     justify-content: center;
-    padding-top: 14px;
+    padding: 10px;
 }

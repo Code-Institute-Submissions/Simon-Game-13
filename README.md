@@ -19,8 +19,8 @@ Being an online version of the popular game Simon and making in accessible to a 
 
 This game is for:
   * people who wish to stimulate their brain;
-  * people who find playing an online game helps the relax and destress;
-  * people who genuenly like playing games in their spare time.
+  * people who find playing an online game helps the relax and distress;
+  * people who genuinely like playing games in their spare time.
 
 ## FEATURES
 
@@ -38,7 +38,7 @@ Having the first step done, I have started to create functions in the relevant o
 5. Reaching the last round, through the ```winGame()``` function, the game checks if all the rounds have been completed successfully. If it has than a message of “WIN!!!” will display on the small screen of the game to inform the player he has completed the last round and won the game.
 
 #### EXISTING FEATURES
-  * Instructions button: pressing it, displays the rulles of the game and how it should be played;
+  * Instructions button: pressing it, displays the rules of the game and how it should be played;
   * ON button: by pressing this button the game powers on meaning that the game comes to life;
   * START button: pressing this button the game starts with round one, continuing with the following rounds if the player clicks the correct colors;
   * STRICT button: actvating this, will increase the games difficulty, meaning that the game will start from beginning if the player presses the incorrect colour sequence;
@@ -54,7 +54,7 @@ As another feature idea left to be implemented I thought about a “LAST” butt
 * [BootstrapCDN](https://www.bootstrapcdn.com/) the project uses **Bootstrap 4** to simplify the structure of the website and make the website responsive easily and efficiently.
 * [JavaScript](https://www.javascript.com/)For the functionality of the game I have used JavaScript, creating all the variables and functions for the game to work flawlessly;
 * [Google Fonts](https://fonts.google.com/) for styling the projects fonts;
-* [JQuery](https://jquery.com/) for building the insturctions pop-up tab.
+* [JQuery](https://jquery.com/) for building the instructions pop-up tab.
 
 ## TESTING
 The game has regularly been tested by myself after each function was codded to make sure it works in perfect order. Some functions had to be re-written to make the code work better without any errors. After finishing coding, I have tested it on different platforms and through different methods:
@@ -118,8 +118,8 @@ The live website is also hosted on Git and can be accessed by clicking [here](ht
 * The four sounds were researched by myself and downloaded to my local machine for implementing them into my code.
 
 #### CODE
-* The entire project has been codded by me, though my knowledge I have accumulated from the course. I have also done a lot of extra studying, having followed other websites and youtube lessons.
+* The entire project has been codded by me, through the knowledge I have accumulated from the course. I have also done a lot of extra studying, having followed other websites and youtube lessons.
 
 #### Acknowledgements
-* I received inspiration for this project while studying the phisycal game and trying to structure and design it through HTML and CSS and making it work and function through JavaScript.
-* Having had my video sessions with my mentor Sime Daehlin, we have discussed what I had in mynd from the begining of this project, how I would like to make it look and function. What features I would like it to have and how to deploy it.
+* I received inspiration for this project while studying the physical game and trying to structure and design it through HTML and CSS and making it work and function through JavaScript.
+* Having had my video sessions with my mentor Simen Daehlin, we have discussed what I had in mynd from the begining of this project, how I would like to make it look and function. What features I would like it to have and how to deploy it.
